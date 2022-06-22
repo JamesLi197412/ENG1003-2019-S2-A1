@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.settings{
+  height: 50px;
+  width:50px;
+  position: absolute;
+  right: 0px;
+}
+
+.videocamOn{
+  height: 50px;
+  width:50px;
+  position: relative;
+  left: 0px;
+}
+
+.videocamOff{
+  height: 50px;
+  width:50px;
+  position: relative;
+  
+}
+
+video#cameraVideo
+{
+  height: calc(100vh - 400px);
+  width: 100%;
+}
+
+#top{
+  width:calc(50% - 11px);
+  position: absolute;
+  left:0px;
+}
+
+#bottom{
+  width: 50%;
+  position: absolute;
+  right: 10px;
+}
+
+#video{
+  height: calc(100vh - 400px);
+  width: 100%
+}
+
+#video-container {
+    /* view height, minus header bar height and bottom div */
+    height: calc(100vh - 500px);
+    position: relative;
+}
+
+.bg-video {
+    /* Prevent vertical scrolling */
+    height: calc(100vh - 56px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.resizeIconLeft{
+    position: relative;
+    left: 0px;
+}
+
+.resizeIconRight{
+  position: relative;
+  right: 0px;
+}
+
+#calculateButton{
+  width: calc(100vw - 10px);
+}
+
+#infoTable{
+  width: calc(100vw - 10px);
+}
+
+#hud {
+    position: absolute;
+    top: 0px; /* header is 44px high */
+    padding-left: 5px;
+    padding-top: 5px;
+    left: 2px;
+    font-size: 1.2em;
+
+    /* white with black outline: */
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.crosshairs {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
